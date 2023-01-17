@@ -1,6 +1,1 @@
 ,comment_username,comment_text,comment_date_time
-0,Olivier Melançon,Both do exactly the same thing.,"Aug 15, 2018 at 15:18"
-1,Reut Sharabani,"Why does it matter? There are subtle differences that do not matter 99% of the time. Generally I prefer list(map(math.pow, range(1, 11), repeat(2))) but its mainly a matter of taste.","Aug 15, 2018 at 15:19"
-2,pdexter,They are identical. Prefer the first alternative.,"Aug 15, 2018 at 15:20"
-3,juanpa.arrivillaga,"List comprehensions do not pre-allocated exactly the required memory. They essentially work like a for-loop with append, which overallocates","Aug 15, 2018 at 15:22"
-4,juanpa.arrivillaga,"@TheFoom the second o e has nothing to do with lambda, it is a generator expression that gets materialized into a list","Aug 15, 2018 at 15:23"
