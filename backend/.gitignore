@@ -1,0 +1,22 @@
+# Dependencies
+node_modules
+
+# confidentials/
+
+# yarn error logs
+yarn-error.log
+
+# Environment varibales
+.env*
+!.env*.example
+
+# Code coverage
+coverage
+
+# bundle folder
+dist
+service-account.json
+
+uploads/videos/*
+
+app.yaml
