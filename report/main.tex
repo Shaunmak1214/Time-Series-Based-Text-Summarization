@@ -1,0 +1,101 @@
+\documentclass{mmuthesis}
+\usepackage[utf8]{inputenc}
+%\newsubfloat{figure}
+
+\usepackage{lipsum}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{rotating}
+\usepackage{longtable}
+
+\usepackage[x11names,dvipsnames,svgnames]{xcolor}
+\usepackage[os=win]{menukeys}
+\usepackage{listings}
+\lstset{language=[LaTeX]TeX,columns=fullflexible,
+basicstyle=\ttfamily,texcsstyle=*\bfseries\color{NavyBlue},
+commentstyle=\itshape\color{PaleVioletRed4},
+frame=single,framesep=6pt,
+framexleftmargin=6pt,framexrightmargin=6pt,
+xleftmargin=12pt,xrightmargin=12pt,
+breaklines=true,breakatwhitespace=true}
+
+
+\author{Mak Yen Wei}
+\title{Final Year Project}
+\submissionyear{2023}
+\submissionmonth{January}
+\faculty{Faculty of Information Technology}
+\degree{Bachelor of Computer Science \\(Data Science)}
+\qualification{B.Sc.~(Hons), Multimedia University, Malaysia}
+
+% load acronym definitions from separate file
+% \loadglsentries{myacronyms}
+
+\begin{document}
+\begin{titlingpage}
+\begin{center}
+% \renewcommand{\familydefault}{<Times New Roman>}
+\includegraphics[scale=0.30]{mmu.png}\\
+
+
+\vspace{2.5cm}
+\Large{\textbf{Final Year Project}} \\
+\vspace{1cm}
+\Large{\textbf{Time Series Based Summarization}} \\
+\vspace{1cm}
+ 
+\vspace{3.0cm}
+
+\large{\textbf{Mak Yen Wei}} \\ 
+\vspace{4.0cm}
+\large{\textbf{Bachelor of Computer Science}} \\ 
+\large{\textbf{(Data Science)}} \\ 
+\vspace{0.5cm}
+\large{\textbf{Jan 2023}} \\ 
+
+\end{center}
+\end{titlingpage}
+% \frontmatter
+% \makecoverandtitlepage
+% \copyrightpage
+% \declarationpage
+
+% \acknowledgements{Thanks guys. I owe you many.}
+% \dedication{To my parents, my husband, and my daughter.}
+
+% \abstractfromfile{sample-abstract}
+
+{\clearpage\SingleSpacing
+\tableofcontents\clearpage
+% \listoftables\clearpage
+% \listoffigures\clearpage
+}
+
+% \prefacefromfile{sample-preface}
+
+\mainmatter 
+  \include{chapter1}
+  \include{chapter2}
+  \include{chapter3}
+% \include{howtouse}
+% \include{sample-chap-intro}
+% \include{sample-chap-dummy}
+
+% \appendix
+% \include{sample-appen-manual}
+% \include{sample-appen-try}
+
+\backmatter
+\bibliography{citation}
+% \printglossaries
+% \theendnotes
+% {\SingleSpacing\printindex}
+
+% \ownpubs
+% \nociteconf{Lim:2009}
+% \nocitejour{Lim:Ranaivo:Tang:Polibits:2011,Lim:Ranaivo:Tang:Procedia:2011}
+% \bibliographyjour{llt}
+% \bibliographyconf{llt}
+
+\end{document}

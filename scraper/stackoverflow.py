@@ -63,6 +63,7 @@ def get_data(link, postIdx):
         data = comment.find_element(By.CSS_SELECTOR, '.js-comment-text-and-form > .comment-body')
         comment_score  = comment.find_element(By.CSS_SELECTOR, ".comment-score").text
         comment_text = data.find_element(By.CSS_SELECTOR, ".comment-copy").text
+        comment_body = data.find_element(By.CSS_SELECTOR, ".comment-copy").get_attribute('innerHTML')
         comment_username = data.find_element(By.CSS_SELECTOR, ".comment-user").text
         comment_date_time = data.find_element(By.CSS_SELECTOR, ".comment-date > .comment-link > span").get_attribute('title')
         
@@ -78,7 +79,7 @@ def get_data(link, postIdx):
             'comment_idx': comment.get_attribute('id'),
             'comment_score':comment_score,
             'comment_username': comment_username,
-            'comment_text': comment_text,
+            'comment_text': comment_body,
             'comment_date_time': comment_date_time,
             
             'answer_idx': '',
@@ -185,7 +186,7 @@ def get_data(link, postIdx):
 
       print(len(all_comments))
       df = pd.DataFrame.from_records(all_comments)
-      df.to_csv('./archive/react-useeffect.csv', mode="a", index=False, header=False)
+      df.to_csv('./archive/react-useeffect-final.csv', mode="a", index=False, header=False)
 
       print("{} comments saved to csv for index {} and link {} ".format(len(all_comments), postIdx, link))
 
@@ -211,5 +212,6 @@ if __name__ == '__main__':
     
     for idx, link in enumerate(links):
       get_data(link, idx)
+      print("Scrapping page number: ", i)
 
   driver.quit();
