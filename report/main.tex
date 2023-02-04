@@ -9,6 +9,10 @@
 \usepackage{rotating}
 \usepackage{longtable}
 
+\usepackage{wrapfig}
+\usepackage{epstopdf}
+\usepackage{pdflscape}
+
 \usepackage[x11names,dvipsnames,svgnames]{xcolor}
 \usepackage[os=win]{menukeys}
 \usepackage{listings}
@@ -27,14 +31,36 @@ breaklines=true,breakatwhitespace=true}
 \submissionmonth{January}
 \faculty{Faculty of Information Technology}
 \degree{Bachelor of Computer Science \\(Data Science)}
-\qualification{B.Sc.~(Hons), Multimedia University, Malaysia}
+\qualification{B.Sc.~(Hons), Multimedia University, Malaysia} 
 
 % load acronym definitions from separate file
 % \loadglsentries{myacronyms}
 
+\usepackage{listings}
+\usepackage{color}
+
+\setstretch{2}
+
 \begin{document}
 \begin{titlingpage}
 \begin{center}
+
+\lstset{frame=tb,
+  language=Python,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
 % \renewcommand{\familydefault}{<Times New Roman>}
 \includegraphics[scale=0.30]{mmu.png}\\
 
@@ -44,7 +70,7 @@ breaklines=true,breakatwhitespace=true}
 \vspace{1cm}
 \Large{\textbf{Time Series Based Summarization}} \\
 \vspace{1cm}
- 
+
 \vspace{3.0cm}
 
 \large{\textbf{Mak Yen Wei}} \\ 
@@ -55,7 +81,7 @@ breaklines=true,breakatwhitespace=true}
 \large{\textbf{Jan 2023}} \\ 
 
 \end{center}
-\end{titlingpage}
+\end{titlingpage} 
 % \frontmatter
 % \makecoverandtitlepage
 % \copyrightpage
@@ -66,7 +92,7 @@ breaklines=true,breakatwhitespace=true}
 
 % \abstractfromfile{sample-abstract}
 
-{\clearpage\SingleSpacing
+{\clearpage\SingleSpacing 
 \tableofcontents\clearpage
 % \listoftables\clearpage
 % \listoffigures\clearpage
@@ -76,11 +102,8 @@ breaklines=true,breakatwhitespace=true}
 
 \mainmatter 
   \include{chapter1}
-  \include{chapter2}
+  \include{chapter2} 
   \include{chapter3}
-% \include{howtouse}
-% \include{sample-chap-intro}
-% \include{sample-chap-dummy}
 
 % \appendix
 % \include{sample-appen-manual}
@@ -88,7 +111,7 @@ breaklines=true,breakatwhitespace=true}
 
 \backmatter
 \bibliography{citation}
-% \printglossaries
+% \printglossaries 
 % \theendnotes
 % {\SingleSpacing\printindex}
 
@@ -97,5 +120,5 @@ breaklines=true,breakatwhitespace=true}
 % \nocitejour{Lim:Ranaivo:Tang:Polibits:2011,Lim:Ranaivo:Tang:Procedia:2011}
 % \bibliographyjour{llt}
 % \bibliographyconf{llt}
-
 \end{document}
+

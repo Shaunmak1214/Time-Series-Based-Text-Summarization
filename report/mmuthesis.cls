@@ -97,7 +97,6 @@
 %\RequirePackage{courier}
 \renewcommand\ttdefault{lmvtt}
 
-
 %%%%%%%%%%%%
 % Line and paragraph spacing
 % - 1.5 spacing for normal text (but need to tweak to exactly simulate Word
