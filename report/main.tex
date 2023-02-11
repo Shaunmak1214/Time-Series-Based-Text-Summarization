@@ -25,6 +25,11 @@ xleftmargin=12pt,xrightmargin=12pt,
 breaklines=true,breakatwhitespace=true}
 
 
+\newsavebox{\mysavebox}
+\newlength{\myrest}
+\usepackage{tikz}
+\usepackage{adjustbox}
+
 \author{Mak Yen Wei}
 \title{Final Year Project}
 \submissionyear{2023}
@@ -40,7 +45,7 @@ breaklines=true,breakatwhitespace=true}
 \usepackage{color}
 
 \setstretch{2}
-
+\DeclareCaptionType{InfoBox}
 \begin{document}
 \begin{titlingpage}
 \begin{center}
@@ -104,6 +109,9 @@ breaklines=true,breakatwhitespace=true}
   \include{chapter1}
   \include{chapter2} 
   \include{chapter3}
+  \include{chapter4}
+  \include{chapter5}
+  \include{chapter6}
 
 % \appendix
 % \include{sample-appen-manual}
