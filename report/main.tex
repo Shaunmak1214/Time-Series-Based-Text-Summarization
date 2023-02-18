@@ -13,6 +13,7 @@
 \usepackage{epstopdf}
 \usepackage{pdflscape}
 
+
 \usepackage[x11names,dvipsnames,svgnames]{xcolor}
 \usepackage[os=win]{menukeys}
 \usepackage{listings}
@@ -30,15 +31,17 @@ breaklines=true,breakatwhitespace=true}
 \usepackage{tikz}
 \usepackage{adjustbox}
 
+\usepackage{pdfpages}
+
 \author{Mak Yen Wei}
-\title{Final Year Project}
+\title{Time Series Based Text Summarization}
 \submissionyear{2023}
 \submissionmonth{January}
-\faculty{Faculty of Information Technology}
-\degree{Bachelor of Computer Science \\(Data Science)}
-\qualification{B.Sc.~(Hons), Multimedia University, Malaysia} 
+\faculty{FACULTY OF COMPUTING AND INFORMATICS}
+\degree{Bachelor of Computer Science (Hons. Data Science)}
+\qualification{Bachelor of Computer Science (Hons. Data Science), Multimedia University, Malaysia} 
 
-% load acronym definitions from separate file
+% load acronym definitions from separate file 
 % \loadglsentries{myacronyms}
 
 \usepackage{listings}
@@ -47,8 +50,10 @@ breaklines=true,breakatwhitespace=true}
 \setstretch{2}
 \DeclareCaptionType{InfoBox}
 \begin{document}
+
+
 \begin{titlingpage}
-\begin{center}
+% \begin{center} 
 
 \lstset{frame=tb,
   language=Python,
@@ -67,40 +72,40 @@ breaklines=true,breakatwhitespace=true}
   tabsize=3
 }
 % \renewcommand{\familydefault}{<Times New Roman>}
-\includegraphics[scale=0.30]{mmu.png}\\
+% \includegraphics[scale=0.30]{mmu.png}\\
 
+% \vspace{2.5cm}
+% \Large{\textbf{Final Year Project}} \\
+% \vspace{1cm}
+% \Large{\textbf{Time Series Based Summarization}} \\
+% \vspace{1cm}
 
-\vspace{2.5cm}
-\Large{\textbf{Final Year Project}} \\
-\vspace{1cm}
-\Large{\textbf{Time Series Based Summarization}} \\
-\vspace{1cm}
+% \vspace{3.0cm}
 
-\vspace{3.0cm}
+% \large{\textbf{Mak Yen Wei}} \\ 
+% \vspace{4.0cm}
+% \large{\textbf{Bachelor of Computer Science}} \\ 
+% \large{\textbf{(Data Science)}} \\ 
+% \vspace{0.5cm}
+% \large{\textbf{Jan 2023}} \\ 
 
-\large{\textbf{Mak Yen Wei}} \\ 
-\vspace{4.0cm}
-\large{\textbf{Bachelor of Computer Science}} \\ 
-\large{\textbf{(Data Science)}} \\ 
-\vspace{0.5cm}
-\large{\textbf{Jan 2023}} \\ 
-
-\end{center}
+% \end{center}
 \end{titlingpage} 
-% \frontmatter
-% \makecoverandtitlepage
-% \copyrightpage
-% \declarationpage
 
-% \acknowledgements{Thanks guys. I owe you many.}
+\frontmatter
+\makecoverandtitlepage
+\copyrightpage
+\declarationpage
+
+\acknowledgements{\input{acknowledge.tex}\clearpage}
 % \dedication{To my parents, my husband, and my daughter.}
 
-% \abstractfromfile{sample-abstract}
+\abstractfromfile{abstract}
 
 {\clearpage\SingleSpacing 
 \tableofcontents\clearpage
-% \listoftables\clearpage
-% \listoffigures\clearpage
+\listoftables\clearpage
+\listoffigures\clearpage
 }
 
 % \prefacefromfile{sample-preface}
@@ -111,17 +116,17 @@ breaklines=true,breakatwhitespace=true}
   \include{chapter3}
   \include{chapter4}
   \include{chapter5}
-  \include{chapter6}
+  \include{chapter6}   
 
-% \appendix
-% \include{sample-appen-manual}
-% \include{sample-appen-try}
-
+ 
 \backmatter
-\bibliography{citation}
+\bibliography{citation} 
 % \printglossaries 
 % \theendnotes
 % {\SingleSpacing\printindex}
+
+\appendix
+\include{appendix}
 
 % \ownpubs
 % \nociteconf{Lim:2009}

@@ -87,8 +87,8 @@ Spacy is a python library that provides a lot of NLP tools. The library provides
 \hspace{0.5cm}
 \begin{figure}[H]
   \begin{lstlisting}
-    '\n<p>You have to convert the response to json <a href="https://google.com">Please Look at this link</a> with await <a href="https://google.com">await</a> response.json();\nand then use setState.</p>\n\n<pre class="lang-js s-code-block"><code class="hljs language-javascript"><span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =&gt;</span> {         \n        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"useEffect TopTen has been called!"</span>);   \n        <span class="hljs-keyword">const</span> <span class="hljs-title function_">fetchdata</span> = <span class="hljs-keyword">async</span> (<span class="hljs-params"></span>) =&gt; {\n        <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> api.<span class="hljs-title function_">topTen</span>();  <span class="hljs-comment">// this calls axios(url)</span>\n        <span class="hljs-keyword">const</span> responseData = <span class="hljs-keyword">await</span> response.<span class="hljs-title function_">json</span>();\n        <span class="hljs-title function_">setLoading</span>(<span class="hljs-literal">false</span>);\n        <span class="hljs-title function_">setTopten</span>(responseData.<span class="hljs-property">data</span>);    \n        <span class="hljs-title function_">setError</span>(responseData.<span class="hljs-property">error</span>);    \n    };\n\n    fetchdata ();     \n}, []);\n</code></pre>\n    '
-  \end{lstlisting}
+'\n<p>You have to convert the response to json <a href="https://google.com">Please Look at this link</a> with await <a href="https://google.com">await</a> response.json();\nand then use setState.</p>\n\n<pre class="lang-js s-code-block"><code class="hljs language-javascript"><span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =&gt;</span> {         \n        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"useEffect TopTen has been called!"</span>);   \n        <span class="hljs-keyword">const</span> <span class="hljs-title function_">fetchdata</span> = <span class="hljs-keyword">async</span> (<span class="hljs-params"></span>) =&gt; {\n        <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> api.<span class="hljs-title function_">topTen</span>();  <span class="hljs-comment">// this calls axios(url)</span>\n        <span class="hljs-keyword">const</span> responseData = <span class="hljs-keyword">await</span> response.<span class="hljs-title function_">json</span>();\n </pre>\n    '
+        \end{lstlisting}
   \caption{Examples for Evaluation Uses: Example 2}
   \label{fig:example-2}
 \end{figure}
@@ -103,11 +103,15 @@ Stopwords are identified as the common words that exists in a language, they are
 The results after using the stopwords removal is as follows:
 
 \begin{figure}[H]
-  \noindent\fbox{%
-    \parbox{\textwidth}{%
-      imagine web socket scheduling new heartbeat tick every time remounted; server would angry apps heart palpitations.
-    }%
-  }
+  \begin{center}
+    \begin{tabular}{|p{9cm}|p{5cm}|}
+    \hline\hline
+    Original & Results \\ [0.5ex] % 
+    \hline 
+    Imagine if that was a Web Socket and we were scheduling a new heartbeat tick every time we remounted; the server would be very angry at our apps heart palpitations. & imagine web socket scheduling new heartbeat tick every time remounted; server would angry apps heart palpitations.  \\ 
+    \hline 
+    \end{tabular}
+  \end{center}
   \caption{Stopwords Removal Results}
   \label{fig:stopwords-removal_results}
 \end{figure}
@@ -119,74 +123,132 @@ A comparison of the results of stemming and lemmatization is shown below. Stemmi
 
 \subsubsection{Stemming Results:} \label{stemming-vs-lemmatization_results_results_2}
 \begin{figure}[H]
-\noindent\begin{lstlisting}
-  imagin if that wa a web socket and we were schedul a new heartbeat tick everi time we remount ; the server would be veri angri at our app heart palpit .
-\end{lstlisting}
-
-\caption{Stemming Results}
-\label{fig:stemming-vs-lemmatization_results_results_2}
+  \begin{center}
+    \begin{tabular}{|p{9cm}|p{5cm}|}
+    \hline\hline
+    Original & Results \\ [0.5ex] % 
+    \hline 
+    Imagine if that was a Web Socket and we were scheduling a new heartbeat tick every time we remounted; the server would be very angry at our apps heart palpitations. & imagin if that wa a web socket and we were schedul a new heartbeat tick everi time we remount ; the server would be veri angri at our app heart palpit .  \\ 
+    \hline 
+    \end{tabular}
+  \end{center}
+  \caption{Stemming Results}
+  \label{fig:stemming-vs-lemmatization_results_results_2}
 \end{figure}
+
 \subsubsection{Lemmatization Results:} \label{stemming-vs-lemmatization_results_results_1}
-
 \begin{figure}[H]
-\noindent\begin{lstlisting}
-  Imagine if that wa a Web Socket and we were scheduling a new heartbeat tick every time we remounted ; the server would be very angry at our apps heart palpitation .
-\end{lstlisting}
-
-\caption{Lemmatization Results}
-\label{fig:stemming-vs-lemmatization_results_results_1}
+  \begin{center}
+    \begin{tabular}{|p{9cm}|p{5cm}|}
+    \hline\hline
+    Original & Results \\ [0.5ex] % 
+    \hline 
+    Imagine if that was a Web Socket and we were scheduling a new heartbeat tick every time we remounted; the server would be very angry at our apps heart palpitations. & Imagine if that wa a Web Socket and we were scheduling a new heartbeat tick every time we remounted ; the server would be very angry at our apps heart palpitation .  \\ 
+    \hline 
+    \end{tabular}
+  \end{center}
+  \caption{Lemmatization Results}
+  \label{fig:stemming-vs-lemmatization_results_results_1}
 \end{figure}
 
 \noindent In this work, lemmatization is chosen. Lemmatization has proven to be more effective than stemming if context of the text is taken into consideration. 
 
 \subsection{Extracting URL} \label{extracting-url_results}
 \subsubsection{Results:} \label{extracting-url_results_results}
+
+\newpage
 \begin{figure}[H]
-\noindent\fbox{%
-    \parbox{\textwidth}{%
-      [('https://google.com', 'Please Look at this link'), ('https://google.com', 'await')]
-    }%
-}
-\caption{Extracting URL Results}
-\label{fig:extracting-url_results_results}
+  \begin{center}
+    \begin{tabular}{|p{8cm}|p{6cm}|}
+    \hline\hline
+    Original & Extracted \\ [0.5ex] % 
+    \hline 
+    \begin{lstlisting}[frame=none]
+'\n<p>You have to convert the response to json <a href="https://google.com">Please Look at this link</a> with await <a href="https://google.com">await</a> response.json();\nand then use setState.</p>\n\n<pre class="lang-js s-code-block"><code class="hljs language-javascript"><span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =&gt;</span> {         \n        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"useEffect TopTen has been called!"</span>);   \n        <span class="hljs-keyword">const</span> <span class="hljs-title function_">fetchdata</span> = <span class="hljs-keyword">async</span> (<span class="hljs-params"></span>) =&gt; {\n        <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> api.<span class="hljs-title function_">topTen</span>();  <span class="hljs-comment">// this calls axios(url)</span>\n        <span class="hljs-keyword">const</span> responseData = <span class="hljs-keyword">await</span> response.<span class="hljs-title function_">json</span>();\n </pre>\n    '
+    \end{lstlisting} & [('https://google.com', 'Please Look at this link'), ('https://google.com', 'await')] \\ 
+  
+    \hline 
+    \end{tabular}
+  \end{center}
+  \caption{Extracting URL Results}
+  \label{fig:extracting-url_results_results}
 \end{figure}
+
 The url and the text that is linked to the url is extracted and shown in the results.
 
 \subsection{Code Blocks Removal } \label{code-blocks-removal_results}
 \subsubsection{Results:} \label{code-blocks-removal_results_results}
+\newpage
 \begin{figure}[H]
-\noindent\begin{lstlisting}
-  '\n<p>You have to convert the response to json <a href="https://google.com">Please Look at this link</a> with await <a href="https://google.com">await</a> response.json();\nand then use setState.</p>\n\n<pre class="lang-js s-code-block"></pre>\n    '
-\end{lstlisting}
-
-\caption{Code Blocks Removal Results}
-\label{fig:code-blocks-removal_results_results}
-\end{figure} 
+  \begin{center}
+    \begin{tabular}{|p{8cm}|p{6cm}|}
+    \hline\hline
+    Original & Results \\ [0.5ex] % 
+    \hline 
+    \begin{lstlisting}[frame=none]
+'\n<p>You have to convert the response to json <a href="https://google.com">Please Look at this link</a> with await <a href="https://google.com">await</a> response.json();\nand then use setState.</p>\n\n<pre class="lang-js s-code-block"><code class="hljs language-javascript"><span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =&gt;</span> {         \n        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"useEffect TopTen has been called!"</span>);   \n        <span class="hljs-keyword">const</span> <span class="hljs-title function_">fetchdata</span> = <span class="hljs-keyword">async</span> (<span class="hljs-params"></span>) =&gt; {\n        <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> api.<span class="hljs-title function_">topTen</span>();  <span class="hljs-comment">// this calls axios(url)</span>\n        <span class="hljs-keyword">const</span> responseData = <span class="hljs-keyword">await</span> response.<span class="hljs-title function_">json</span>();\n </pre>\n    '
+    \end{lstlisting} &\begin{lstlisting}[frame=none]
+'\n<p>You have to convert the response to json <a href="https://
+google.com">Please Look at this link</a> with await <a href="
+https://google.com">
+await</a> response.json();\n
+and then use 
+setState.</p>\n\n<pre class="lang-js 
+ s-code-block"></pre>\n    '
+    \end{lstlisting} \\ 
+    \hline 
+    \end{tabular}
+  \end{center}
+  \caption{Code Blocks Removal Results}
+  \label{fig:code-blocks-removal_results_results}
+\end{figure}
 
 \noindent In this step, the codeblocks is removed from the original html by detecting the tags and classes used.
 
 \subsection{HTML Tags Removal} \label{html-tags-removal_results}
 \subsubsection{Results:} \label{html-tags_results_results}
+\newpage
 \begin{figure}[H]
-\noindent\begin{lstlisting}
-  '\nYou have to convert the response to json Please Look at this link with await await response.json();\nand then use setState.\n\nuseEffect(() =&gt; {         \n        console.log("useEffect TopTen has been called!");   \n        const fetchdata = async () =&gt; {\n        const response = await api.topTen();  // this calls axios(url)\n        const responseData = await response.json();\n        setLoading(false);\n        setTopten(responseData.data);    \n        setError(responseData.error);    \n    };\n\n    fetchdata ();     \n}, []);\n\n    '
-\end{lstlisting}
- 
-\caption{HTML Tags Removal Results}
-\label{fig:html-tags-removal_results_results}
+  \begin{center}
+    \begin{tabular}{|p{8cm}|p{6cm}|}
+    \hline\hline
+    Original & Results \\ [0.5ex] % 
+    \hline 
+    \begin{lstlisting}[frame=none]
+'\n<p>You have to convert the response to json <a href="https://google.com">Please Look at this link</a> with await <a href="https://google.com">await</a> response.json();\nand then use setState.</p>\n\n<pre class="lang-js s-code-block"><code class="hljs language-javascript"><span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =&gt;</span> {         \n        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"useEffect TopTen has been called!"</span>);   \n        <span class="hljs-keyword">const</span> <span class="hljs-title function_">fetchdata</span> = <span class="hljs-keyword">async</span> (<span class="hljs-params"></span>) =&gt; {\n        <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> api.<span class="hljs-title function_">topTen</span>();  <span class="hljs-comment">// this calls axios(url)</span>\n        <span class="hljs-keyword">const</span> responseData = <span class="hljs-keyword">await</span> response.<span class="hljs-title function_">json</span>();\n </pre>\n    '
+    \end{lstlisting} &\begin{lstlisting}[frame=none]
+'\nYou have to convert the response to json Please Look at this link with await await response.json();\nand then use setState.\n\nuseEffect(() =&gt; {         \n        console.log("useEffect TopTen has been called!");   \n        const fetchdata = async () =&gt; {\n        const response = await api.topTen();  // this calls axios(url)\n        const responseData = await response.json();\n        setLoading(false);\n        setTopten(responseData.
+data);    \n        setError(responseData.
+error);    \n    };\n\n    fetchdata ();     \n}, []);\n\n    '
+    \end{lstlisting} \\ 
+    \hline 
+    \end{tabular}
+  \end{center}
+  \caption{HTML Tags Removal Results}
+  \label{fig:html-tags-removal_results_results}
 \end{figure}
 
 \noindent In this step, the html tags is removed from the original html by detecting the tags.
 
 \subsection{Combining all proprocessing techniques} \label{combining-all-the-methods-used_results}
 By combining all of the proprocessing techinques used above \ref{stopwords-removal_results} \ref{stemming-vs-lemmatization_results} \ref{extracting-url_results} \ref{code-blocks-removal_results} \ref{html-tags-removal_results}, an evaluation is made using Example 2 \ref{example-2}
-
+\newpage
 \begin{figure}[H]
-\noindent\begin{lstlisting}
-  You have to convert the response to json with await response.json();and then use setState. 
-\end{lstlisting}
-\caption{Combining all the methods used}
-\label{fig:combining-all-the-methods-used_results}
+  \begin{center}
+    \begin{tabular}{|p{8cm}|p{6cm}|}
+    \hline\hline
+    Original & Results \\ [0.5ex] % 
+    \hline 
+    \begin{lstlisting}[frame=none]
+'\n<p>You have to convert the response to json <a href="https://google.com">Please Look at this link</a> with await <a href="https://google.com">await</a> response.json();\nand then use setState.</p>\n\n<pre class="lang-js s-code-block"><code class="hljs language-javascript"><span class="hljs-title function_">useEffect</span>(<span class="hljs-function">() =&gt;</span> {         \n        <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-string">"useEffect TopTen has been called!"</span>);   \n        <span class="hljs-keyword">const</span> <span class="hljs-title function_">fetchdata</span> = <span class="hljs-keyword">async</span> (<span class="hljs-params"></span>) =&gt; {\n        <span class="hljs-keyword">const</span> response = <span class="hljs-keyword">await</span> api.<span class="hljs-title function_">topTen</span>();  <span class="hljs-comment">// this calls axios(url)</span>\n        <span class="hljs-keyword">const</span> responseData = <span class="hljs-keyword">await</span> response.<span class="hljs-title function_">json</span>();\n </pre>\n    '
+    \end{lstlisting} &\begin{lstlisting}[frame=none]
+You have to convert the response to json with await response.json();and then use setState. 
+    \end{lstlisting} \\ 
+    \hline 
+    \end{tabular}
+  \end{center}
+  \caption{Combining all the methods used}
+  \label{fig:combining-all-the-methods-used_results}
 \end{figure}
 
 The preprocessing techniques used above has removed the html tags, codeblocks, stopwords, and lemmatized the text. The text is now ready to be used for the following pipeline
@@ -201,6 +263,8 @@ In order to rank sentences in a document, sentence scoring is used in this work,
   \caption{Sentence Scoring Results}
   \label{fig:sentence-scoring}
 \end{figure}
+
+The Figure \ref{sentence-scoring_results_results} angled at 90 degrees, shows the result of the sentence scoring algorithm that we've implemented, the average score of all the sentences on a post are located at the far right of the table. Consequently, the posts are ranked based on the average score column.
 
 \section{Rank Posts: Part 1} \label{rank-posts_1_results}
 According to the framework proposed in \ref{framework}, the rankings can be evaluated after the sentence scoring is done. The results can be evaluated by using a wordcloud to determine the most important words in selected posts. The wordcloud is shown below:
@@ -225,6 +289,8 @@ To further rank the sentences, sentiment is another factor that can provide usef
   \label{fig:sentiment-analysis}
 \end{figure}
 
+The Figure \ref{fig:sentiment-analysis} angled at 90 degrees, shows the result of the sentiment analysis, the averages of positive, negative, and neutral scores are located at the middle of the table. The posts are ranked based on the average positive score column.
+
 \section{Rank Posts: Part 2} \label{rank-posts_2_results}
 The wordcloud is shown below:
 
@@ -243,10 +309,12 @@ The final step is to summarize the top 5 posts ranked by the previous step \ref{
 \subsection{Summarization Results:} \label{summarization_results}
 \begin{figure}[H]
   \centering
-  \includegraphics[scale=0.50, angle=90]{assets/summarization.png}
-  \caption{Sentiment Anlysis Results}
+  \includegraphics[scale=0.40, angle=90]{assets/summarization.png}
+  \caption{Summarization Results}
   \label{fig:summarization}
 \end{figure}
+
+The Figure \ref{fig:summarization} angled at 90 degrees, shows the result of the summarization implementation, the summary of the top 5 posts are located at the far right of the table.
 
 \section{Rank Posts: Part 3} \label{rank-posts_3_results}
 The wordcloud is shown below:

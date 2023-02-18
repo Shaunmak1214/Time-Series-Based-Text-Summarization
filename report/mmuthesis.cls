@@ -75,8 +75,10 @@
 % i.e. (40 - 15)mm = 25mm from bottom edge of typeblock.
 %%%%%%%%%%%%
 \settrimmedsize{297mm}{210mm}{*}
-\setlrmarginsandblock{40mm}{25mm}{*}
-\setulmarginsandblock{20mm}{40mm}{*}
+% \setlrmarginsandblock{40mm}{25mm}{*}
+% \setulmarginsandblock{20mm}{40mm}{*}
+\setlrmarginsandblock{40mm}{25mm}{*} %left,right
+\setulmarginsandblock{20mm}{40mm}{*} %upper,lower
 \setheadfoot{\baselineskip}{25mm}
 \addtolength\footskip{-6pt}
 \pagestyle{plain}
@@ -96,6 +98,7 @@
 \RequirePackage{mathptmx}
 %\RequirePackage{courier}
 \renewcommand\ttdefault{lmvtt}
+
 
 %%%%%%%%%%%%
 % Line and paragraph spacing
@@ -163,43 +166,89 @@
 %%%%%%%%%%%%
 % The Cover and Title page
 %%%%%%%%%%%%
+% COVER PAGE
 \newcommand{\makecoverandtitlepage}{%
 \ignorespaces
 %\changepage{-20mm}{-15mm}{15mm}{0em}{0em}{20mm}{0em}{0em}{0em}
+% \changepage{-40mm}{-15mm}{15mm}{0em}{0em}{40mm}{0em}{0em}{0em}
 \changepage{-40mm}{-15mm}{15mm}{0em}{0em}{40mm}{0em}{0em}{0em}
+% \changepage{bottom}{left}{idk}{left}{idk}{top}{top}{top}{idk}
+
+{
+\changepage{0mm}{0mm}{0mm}{0em}{0em}{0mm}{0em}{0em}{0em}
+\setlrmarginsandblock{45mm}{45mm}{*} %left,right
+\setulmarginsandblock{10mm}{50mm}{*} %upper,lower
 \begin{titlingpage}
 \centering\SingleSpacing%
 \renewcommand\ttdefault{lmtt}%
-\fontfamily{phv}\fontseries{mc}%\LARGE%
-%\fontfamily{qhv}\fontseries{cr}%
-\fontsize{18pt}{20pt}
+% \fontfamily{}\fontseries{mc}%\LARGE%
+% \fontfamily{qhv}\fontseries{cr}%
+\fontsize{20pt}{20pt}
 \selectfont%
-\MakeUppercase{\thetitle}\par%
+\MakeUppercase{WORKPLACE PREFERENCE\\ ANALYTICS
+AMONG MMU\\ GRADUATES}\par%
 \vfill%
+\fontsize{16pt}{20pt}
+\selectfont%
 \MakeUppercase{\theauthor}\par%
+\setstretch{4}
+\fontsize{12pt}{10pt}
+\selectfont%
+\MakeUppercase{session 2022/2023}\par%
 \vfill%
-\MakeUppercase{\@mtdegree}\par%
+\vfill%
+% \setstretch{4}
+\fontsize{12pt}{0pt}
+\selectfont%
+\MakeUppercase{\@mtfaculty}\par%
 MULTIMEDIA UNIVERSITY\par%
 \MakeUppercase{\@mtsubmissionmonth}\ \@mtsubmissionyear\par%
+\vfill%
 \end{titlingpage}%
-\clearpage\hspace{1em}\thispagestyle{empty}\clearpage%%Hack to insert blank page
-{\centering\thispagestyle{empty}\setcounter{page}{1}%
+}
+
+\clearpage\hspace{1em}\thispagestyle{empty}
+
+% TITLE PAGE
+\clearpage%%Hack to insert blank page
+{
+{
+\changepage{0mm}{0mm}{0mm}{0em}{0em}{0mm}{0em}{0em}{0em}
+\setlrmarginsandblock{45mm}{45mm}{*} %left,right
+\setulmarginsandblock{10mm}{50mm}{*} %upper,lower
+\centering\thispagestyle{empty}\setcounter{page}{1}%
 {\SingleSpacing\LARGE\MakeUppercase{\thetitle}\par}%
 \vfill%
-{\setstretch{2} BY\\%
-{\fontsize{16pt}{18pt}\selectfont\MakeUppercase{\theauthor}}\\\@mtquali\par}%
+{
+% \setstretch{2} 
+{\fontsize{10pt}{0pt}\selectfont BY\par
+% \vfill% 
+}
+{\fontsize{18pt}{0pt}\selectfont\MakeUppercase{\theauthor}}
+%\\
+\setstretch{2}
 \vfill%
-{\setstretch{2} THESIS SUBMITTED IN FULFILMENT OF THE\\%
-REQUIREMENT FOR THE DEGREE OF\\%
-\MakeUppercase{\@mtdegree}\\%
-(by Research)\\%
-in the\\%
-\@mtfaculty\par}%
+\MakeUppercase{\fontsize{10pt}{6pt}\selectfont session\\ 2022/2023}\par%
 \vfill%
-{\SingleSpacing\fontsize{16pt}{18pt}\selectfont MULTIMEDIA UNIVERSITY\\%
-MALAYSIA}\\[1em]%
-\@mtsubmissionmonth\ \@mtsubmissionyear%\\[3em]%
-\par\clearpage}%
+{\setstretch{2}\fontsize{10pt}{6pt}\selectfont THIS PROJECT REPORT IS\\ PREPARED FOR\par%
+\fontsize{12pt}{8pt}\selectfont\@mtfaculty\\
+\fontsize{12pt}{8pt}\selectfont MULTIMEDIA UNIVERSITY\\
+\fontsize{12pt}{8pt}\selectfont IN PARTIAL FULFILLMENT\\
+\fontsize{12pt}{8pt}\selectfont FOR\par
+\MakeUppercase{\fontsize{12pt}{8pt}\selectfont BACHELOR OF COMPUTER SCIENCE\\ B.CS (HONS) DATA SCIENCE}\par%
+% (by Research)\\%
+% in the\\%
+\vfill%
+% \@mtquali\par
+}%
+\fontsize{12pt}{0pt}\selectfont\@mtfaculty\par}%
+% \vfill%
+{\fontsize{16pt}{0pt}\selectfont MULTIMEDIA UNIVERSITY\par%
+}
+\fontsize{12pt}{0pt}\selectfont\@mtsubmissionmonth\ \@mtsubmissionyear%\\[3em]%
+\par\vfill%
+\vfill%
+\clearpage}}%
 %\changepage{20mm}{15mm}{-15mm}{0em}{0em}{-20mm}{0em}{0em}{0em}%
 \changepage{40mm}{15mm}{-15mm}{0em}{0em}{-40mm}{0em}{0em}{0em}
 \renewcommand\ttdefault{lmvtt}%
@@ -209,34 +258,55 @@ MALAYSIA}\\[1em]%
 %%%%%%%%%%%%
 % The Copyright page
 %%%%%%%%%%%%
-\newcommand{\copyrightpage}{\hspace{1em}%
+\newcommand{\copyrightpage}{
+\hspace{1em}%
 \phantomsection%
 \ifpdf\pdfbookmark{Copyright Page}{copyright}\fi%
 \cftaddtitleline{toc}{chapter}{COPYRIGHT PAGE}{\thepage}%
 \begin{vplace}[1]
-\fontsize{14pt}{16pt}\selectfont %The copyright of this thesis belongs to the author under the terms of the Copyright Act 1987 as qualified by Regulation 4(1) of the Multimedia University Intellectual Property Regulations. Due acknowledgement shall always be made of the use of any material contained in, or derived from, this thesis.\par\vskip\onelineskip%
+\fontsize{14pt}{14pt}\selectfont %The copyright of this thesis belongs to the author under the terms of the Copyright Act 1987 as qualified by Regulation 4(1) of the Multimedia University Intellectual Property Regulations. Due acknowledgement shall always be made of the use of any material contained in, or derived from, this thesis.\par\vskip\onelineskip%
 %{\raggedleft%
 %\begin{tabular}{@{}r@{ }l@{}}
 %\textcopyright & \theauthor, \@mtsubmissionyear\\
 %& All rights reserved
 %\end{tabular}%
 %\par}
-\setlength{\parindent}{0pt}
-\textcopyright \@mtsubmissionyear{} Universiti Telekom Sdn.\ Bhd. ALL RIGHTS RESERVED.\par
-Copyright of this thesis belongs to Universiti Telekom Sdn.\ Bhd. as qualified by Regulation 7.2 (c) of the Multimedia University Intellectual Property and Commercialisation Policy. No part of this publication may be reproduced, stored in or introduced into a retrieval system, or transmitted in any form or by any means (electronic, mechanical, photocopying, recording, or otherwise), or for any purpose, without the express written permission of Universiti Telekom Sdn.\ Bhd. Due acknowledgement shall always be made of the use of any material contained in, or derived from, this thesis.
-\end{vplace}\clearpage%
+\setlength{\parindent}{1cm}
+
+Copyright of this report belongs to Universiti Telekom Sdn.\ Bhd. as qualified by Regulation 7.2 (c) of the Multimedia University Intellectual Property and Commercialisation Policy. No part of this publication may be reproduced, stored in or introduced into a retrieval system, or transmitted in any form or by any means (electronic, mechanical, photocopying, recording, or otherwise), or for any purpose, without the express written permission of Universiti Telekom Sdn.\ Bhd. Due acknowledgement shall always be made of the use of any material contained in, or derived from, this report.\par
+\centering\fontsize{12pt}{0pt}\selectfont\textcopyright \@mtsubmissionyear{} Universiti Telekom Sdn.\ Bhd. ALL RIGHTS RESERVED.\par
+\end{vplace}
+
+\clearpage%
 }
 
 
 %%%%%%%%%%%%
 % The Declaration page
 %%%%%%%%%%%%
+
 \newcommand{\declarationpage}{%
-\chapter{Declaration}\vskip-\onelineskip
-I hereby declare that the work has been done by myself and no portion of the work contained in this Thesis has been submitted in support of any application for any other degree or qualification on this or any other university or institution of learning.\\[3\onelineskip]
+% \hspace{1em}%
+
+% \vspace*{\fill}
+
+% \chapter{Declaration}%\vskip-\onelineskip
+\phantomsection
+\ifpdf\pdfbookmark{Declaration}{declaration}\fi%
+\cftaddtitleline{toc}{chapter}{DECLARATION}{\thepage}%
+\begin{vplace}[1]
+{\centering\fontsize{12pt}{0pt}\selectfont\MakeUppercase\textbf{DECLARATION}
+\par}
+I hereby declare that the work has been done by myself and no portion of the work contained in this thesis has been submitted in support of any application for any other degree or qualification of this or any other university or institute of learning.\\[3\onelineskip]
 \newlength\siglinelength
 \settowidth{\siglinelength}{\bfseries\normalsize\theauthor}
-\noindent\rule{\siglinelength}{.6pt}\\{\bfseries\normalsize\theauthor}\par\clearpage
+\noindent\rule{\siglinelength}{.6pt}\\{\normalsize\theauthor}
+    \\{\normalsize Faculty of Computing \& Informatics}
+    \\{\normalsize Multimedia University}
+    \\{\normalsize Date: 13/02/2023}\par
+\end{vplace}
+% \vspace*{\fill}    
+\clearpage
 }
 
 %%%%%%%%%%%%

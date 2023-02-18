@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.3)  12 FEB 2023 05:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.7.3)  13 FEB 2023 18:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -671,14 +671,15 @@ Package: multibib 2008/12/10 v1.4 Multiple bibliographies for one document.
 \mb@biblabelwidth=\count349
 )
 \@auxoutjour=\write6
- (./jour.aux)
+
+No file jour.aux.
 \openout6 = `jour.aux'.
 
 \@auxoutconf=\write7
- (./conf.aux)
+No file conf.aux.
 \openout7 = `conf.aux'.
 
- (/usr/local/texlive/2022/texmf-dist/tex/latex/glossaries/base/glossaries.sty
+(/usr/local/texlive/2022/texmf-dist/tex/latex/glossaries/base/glossaries.sty
 Package: glossaries 2021/11/01 v4.49 (NLCT)
  (/usr/local/texlive/2022/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
@@ -875,7 +876,7 @@ Package: glossary-tree 2021/11/01 v4.49 (NLCT)
 \glo@main@file=\write9
 \openout9 = `main.glo'.
 
-Package glossaries Info: Writing glossary file main.glo on input line 451.
+Package glossaries Info: Writing glossary file main.glo on input line 521.
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks44
@@ -1260,69 +1261,99 @@ File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 )
 \mysavebox=\box129
 \myrest=\skip287
-Package caption Info: Option `declare type' requires the `newfloat' package on input line 48.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2022/01/29 v0.5u Insert pages of external PDF documents (AM)
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count432
+\calc@Bcount=\count433
+\calc@Adimen=\dimen356
+\calc@Bdimen=\dimen357
+\calc@Askip=\skip288
+\calc@Bskip=\skip289
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count434
+\calc@Cskip=\skip290
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
+\ESO@tempdima=\dimen358
+\ESO@tempdimb=\dimen359
+)
+\AM@pagewidth=\dimen360
+\AM@pageheight=\dimen361
+\AM@fboxrule=\dimen362
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2022/01/29 v0.5u Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count435
+\AM@pagebox=\box130
+\AM@global@opts=\toks62
+\AM@pagecnt=\count436
+\AM@toc@title=\toks63
+\c@AM@survey=\count437
+\AM@templatesizebox=\box131
+)
+Package caption Info: Option `declare type' requires the `newfloat' package on input line 51.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/newfloat/newfloat.sty
 Package: newfloat 2019/09/02 v1.1l Defining new floating environments (AR)
 Package newfloat Info: `rotating' package detected.
 Package newfloat Info: `wrapfig' package detected.
 )
-Package newfloat Info: New float `InfoBox' with options `' on input line 48.
-\c@InfoBox=\count432
-Package newfloat Info: float type `InfoBox'=8 on input line 48.
-\c@loInfoBoxdepth=\count433
+Package newfloat Info: New float `InfoBox' with options `' on input line 51.
+\c@InfoBox=\count438
+Package newfloat Info: float type `InfoBox'=8 on input line 51.
+\c@loInfoBoxdepth=\count439
  (/usr/local/texlive/2022/texmf-dist/tex/latex/ragged2e/ragged2e.sty
 Package: ragged2e 2021/12/15 v3.1 ragged2e Package
-\CenteringLeftskip=\skip288
-\RaggedLeftLeftskip=\skip289
-\RaggedRightLeftskip=\skip290
-\CenteringRightskip=\skip291
-\RaggedLeftRightskip=\skip292
-\RaggedRightRightskip=\skip293
-\CenteringParfillskip=\skip294
-\RaggedLeftParfillskip=\skip295
-\RaggedRightParfillskip=\skip296
-\JustifyingParfillskip=\skip297
-\CenteringParindent=\skip298
-\RaggedLeftParindent=\skip299
-\RaggedRightParindent=\skip300
-\JustifyingParindent=\skip301
-) (./main.aux (./chapter1.aux) (./chapter2.aux) (./chapter3.aux) (./chapter4.aux
-
-LaTeX Warning: Label `summarization_results' multiply defined.
-
-) (./chapter5.aux) (./chapter6.aux))
+\CenteringLeftskip=\skip291
+\RaggedLeftLeftskip=\skip292
+\RaggedRightLeftskip=\skip293
+\CenteringRightskip=\skip294
+\RaggedLeftRightskip=\skip295
+\RaggedRightRightskip=\skip296
+\CenteringParfillskip=\skip297
+\RaggedLeftParfillskip=\skip298
+\RaggedRightParfillskip=\skip299
+\JustifyingParfillskip=\skip300
+\CenteringParindent=\skip301
+\RaggedLeftParindent=\skip302
+\RaggedRightParindent=\skip303
+\JustifyingParindent=\skip304
+)
+No file main.aux.
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 52.
+LaTeX Font Info:    ... okay on input line 52.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/caption/ltcaption.sty
+(/usr/local/texlive/2022/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: rotating package is loaded.
 Package caption Info: supertabular package is loaded.
 Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 49.
+Package hyperref Info: Link coloring OFF on input line 52.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/local/texlive/2022/texmf-dist/tex/latex/refcount/refcount.sty
@@ -1330,721 +1361,89 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/local/texlive/2022/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count434
+\c@section@level=\count440
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 49.
-LaTeX Info: Redefining \ref on input line 49.
-LaTeX Info: Redefining \pageref on input line 49.
-LaTeX Info: Redefining \nameref on input line 49.
-(./main.out) (./main.out)
+LaTeX Info: Redefining \nameref on input line 52.
+LaTeX Info: Redefining \ref on input line 52.
+LaTeX Info: Redefining \pageref on input line 52.
+LaTeX Info: Redefining \nameref on input line 52.
 \@outlinefile=\write11
 \openout11 = `main.out'.
 
-\c@maskedRefs=\count435
- (/usr/local/texlive/2022/texmf-dist/tex/latex/apacite/english.apc
+\c@maskedRefs=\count441
+(/usr/local/texlive/2022/texmf-dist/tex/latex/apacite/english.apc
 File: english.apc 2013/07/21 v6.03 apacite language file
 LaTeX Info: Redefining \BPBI on input line 129.
 LaTeX Info: Redefining \BHBI on input line 130.
 ) (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count436
-\scratchdimen=\dimen356
-\scratchbox=\box130
-\nofMPsegments=\count437
-\nofMParguments=\count438
-\everyMPshowfont=\toks62
-\MPscratchCnt=\count439
-\MPscratchDim=\dimen357
-\MPnumerator=\count440
-\makeMPintoPDFobject=\count441
-\everyMPtoPDFconversion=\toks63
+\scratchcounter=\count442
+\scratchdimen=\dimen363
+\scratchbox=\box132
+\nofMPsegments=\count443
+\nofMParguments=\count444
+\everyMPshowfont=\toks64
+\MPscratchCnt=\count445
+\MPscratchDim=\dimen364
+\MPnumerator=\count446
+\makeMPintoPDFobject=\count447
+\everyMPtoPDFconversion=\toks65
 )
-\c@lstlisting=\count442
+\c@lstlisting=\count448
 Package newfloat Info: `float' package detected.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-<mmu.png, id=336, 798.985pt x 243.91125pt>
-File: mmu.png Graphic file (type png)
-<use mmu.png>
-Package pdftex.def Info: mmu.png  used on input line 70.
-(pdftex.def)             Requested size: 239.69734pt x 73.17393pt.
- [1
+) [1
 
 \openout8 = `main.ist'.
 
-{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./mmu.png>] (./main.toc
-LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 2.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
-File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line 2.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/omlztmcm.fd
-File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line 2.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/omsztmcm.fd
-File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line 2.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/omxztmcm.fd
-File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
-)
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 2.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ot1ptm.fd
-File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
-)
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 2.
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+
+{/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.56 ...sitory - Database Design}{64}{section.3.9}
-                                                  % [1
-
-
-]) [2] [3]
-\openout2 = `chapter1.aux'.
-
- (./chapter1.tex
-
-LaTeX Warning: Citation `bugs_nightmare' undefined on input line 2.
-
-
-LaTeX Warning: Citation `8816796' undefined on input line 6.
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.8 H
-     owever, one of the major issue with proposing such framework is the dat... [1
-
-
+l.96 \makecoverandtitlepage
+                            [1
 
 
 ]
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.12 \section
-             {Problem Statement}~\label{ch:problem_statement} [2]
+l.96 \makecoverandtitlepage
+                            [1
 
-LaTeX Warning: Citation `stopwords_2' undefined on input line 15.
-
-
-LaTeX Warning: Citation `stopwords_1' undefined on input line 15.
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.20 \section
-             {Hypothesis} [3]
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 29.
+]
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 97.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-) [4]) [5]
-\openout2 = `chapter2.aux'.
-
- (./chapter2.tex [6
-
-
-
-
-]
-
-LaTeX Warning: Citation `faq_gen_1' undefined on input line 8.
-
-
-LaTeX Warning: Citation `10.1007/978-3-319-18356-5_30' undefined on input line 8.
-
-
-LaTeX Warning: Citation `5615722' undefined on input line 8.
-
-
-LaTeX Warning: Citation `6227139' undefined on input line 8.
-
-
-LaTeX Warning: Citation `7817112' undefined on input line 8.
-
-[7]
-
-LaTeX Warning: Citation `10.1145/1099554.1099571' undefined on input line 12.
-
-<assets/auto-faq-gen-architecture.png, id=502, 466.74374pt x 331.2375pt>
-File: assets/auto-faq-gen-architecture.png Graphic file (type png)
-<use assets/auto-faq-gen-architecture.png>
-Package pdftex.def Info: assets/auto-faq-gen-architecture.png  used on input line 15.
-(pdftex.def)             Requested size: 406.06378pt x 288.17429pt.
-[8 <./assets/auto-faq-gen-architecture.png>]
-
-LaTeX Warning: Citation `10.1007/978-3-319-42911-3_25' undefined on input line 25.
-
-[9]
-
-LaTeX Warning: Citation `duan-etal-2017-question' undefined on input line 31.
-
-[10]
-
-LaTeX Warning: Citation `sms_faq_retrieval' undefined on input line 37.
-
-
-LaTeX Warning: Citation `8054419' undefined on input line 39.
-
-
-LaTeX Warning: Citation `Improving_question_retrieval_in_community_question_answering_using_world_knowledge' undefined on input line 39.
-
-
-LaTeX Warning: Citation `OTHMAN2019485' undefined on input line 41.
-
-[11] [12]
-<assets/An_FAQ_search_method_query_issue.png, id=559, 503.8825pt x 68.255pt>
-File: assets/An_FAQ_search_method_query_issue.png Graphic file (type png)
-<use assets/An_FAQ_search_method_query_issue.png>
-Package pdftex.def Info: assets/An_FAQ_search_method_query_issue.png  used on input line 54.
-(pdftex.def)             Requested size: 428.30215pt x 58.01701pt.
-
-Overfull \hbox (23.10214pt too wide) in paragraph at lines 54--55
- [] 
- []
-
-[13 <./assets/An_FAQ_search_method_query_issue.png>] [14]
-
-LaTeX Warning: Citation `9144082' undefined on input line 64.
-
-[15] [16]
-
-LaTeX Warning: Citation `9074166' undefined on input line 77.
-
-
-LaTeX Warning: Citation `NIPS2013_9aa42b31' undefined on input line 89.
-
-[17] [18] [19]
-
-LaTeX Warning: Citation `ABSAUSGRD2019' undefined on input line 114.
-
-
-LaTeX Warning: Citation `9260162' undefined on input line 120.
-
-
-LaTeX Warning: Citation `xue-li-2018-aspect' undefined on input line 120.
-
-
-LaTeX Warning: Citation `MABDELGWAD20226652' undefined on input line 120.
-
-[20]
-LaTeX Font Info:    Trying to load font information for T1+lmvtt on input line 124.
- (/usr/local/texlive/2022/texmf-dist/tex/latex/lm/t1lmvtt.fd
-File: t1lmvtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-
-Package caption Warning: \captionsetup{type*=...} or \captionof
-(caption)                outside box or environment on input line 127.
-See the caption package documentation for explanation.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 127.
-See the caption package documentation for explanation.
-
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 127.
-[21]
-
-LaTeX Warning: Citation `SOABSAUMLT2021' undefined on input line 136.
-
-
-LaTeX Warning: Citation `Zainuddin2018HybridSC' undefined on input line 140.
-
-
-LaTeX Warning: Citation `AlSmadi2017DeepRN' undefined on input line 140.
-
-
-LaTeX Warning: Citation `ABSAUDNASO2020' undefined on input line 142.
-
-
-LaTeX Warning: Citation `Rezaeinia2019SentimentAB' undefined on input line 142.
-
-
-LaTeX Warning: Citation `10.1016/j.neucom.2019.04.038' undefined on input line 142.
-
-
-LaTeX Warning: Citation `he-etal-2018-exploiting' undefined on input line 144.
-
-
-LaTeX Warning: Citation `10.1016/j.future.2018.10.041' undefined on input line 144.
-
-
-LaTeX Warning: Citation `Sindhu2019AspectBasedOM' undefined on input line 144.
-
-[22] [23]
-
-LaTeX Warning: Citation `ATSMACR2022' undefined on input line 149.
-
-
-LaTeX Warning: Citation `ATSUSTSRAB2016' undefined on input line 149.
-
-
-LaTeX Warning: Citation `8449647' undefined on input line 151.
-
-[24]
-
-LaTeX Warning: Citation `ACNATTS2009' undefined on input line 162.
-
-
-LaTeX Warning: Citation `ATSULSA2011' undefined on input line 164.
-
-[25]
-
-LaTeX Warning: Citation `banarescu-etal-2013-abstract' undefined on input line 170.
-
-[26]) [27]
-\openout2 = `chapter3.aux'.
-
- (./chapter3.tex [28
-
-
-
-
-]
-<slice_framework_1.png, id=749, 790.955pt x 501.875pt>
-File: slice_framework_1.png Graphic file (type png)
-<use slice_framework_1.png>
-Package pdftex.def Info: slice_framework_1.png  used on input line 9.
-(pdftex.def)             Requested size: 395.47653pt x 250.93687pt.
-<slice_framework_2.png, id=750, 790.955pt x 501.875pt>
-File: slice_framework_2.png Graphic file (type png)
-<use slice_framework_2.png>
-Package pdftex.def Info: slice_framework_2.png  used on input line 13.
-(pdftex.def)             Requested size: 395.47653pt x 250.93687pt.
-<slice_framework_3.png, id=751, 790.955pt x 501.875pt>
-File: slice_framework_3.png Graphic file (type png)
-<use slice_framework_3.png>
-Package pdftex.def Info: slice_framework_3.png  used on input line 17.
-(pdftex.def)             Requested size: 395.47653pt x 250.93687pt.
- [29 <./slice_framework_1.png> <./slice_framework_2.png>]
-<slice_framework_4.png, id=760, 790.955pt x 501.875pt>
-File: slice_framework_4.png Graphic file (type png)
-<use slice_framework_4.png>
-Package pdftex.def Info: slice_framework_4.png  used on input line 21.
-(pdftex.def)             Requested size: 395.47653pt x 250.93687pt.
-<slice_framework_5.png, id=761, 790.955pt x 51.19125pt>
-File: slice_framework_5.png Graphic file (type png)
-<use slice_framework_5.png>
-Package pdftex.def Info: slice_framework_5.png  used on input line 25.
-(pdftex.def)             Requested size: 395.47653pt x 25.59555pt.
- [30 <./slice_framework_3.png> <./slice_framework_4.png> <./slice_framework_5.png>] [31]
-Overfull \hbox (2.05167pt too wide) in paragraph at lines 64--65
-[][][][][][][][][][][][][][]  
- []
-
-[32] [33]
-<inference-eng.png, id=813, 533.995pt x 1215.54124pt>
-File: inference-eng.png Graphic file (type png)
-<use inference-eng.png>
-Package pdftex.def Info: inference-eng.png  used on input line 128.
-(pdftex.def)             Requested size: 320.39948pt x 729.33038pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 128--129
-
- []
-
-[34]
-Overfull \vbox (86.58037pt too high) has occurred while \output is active []
-
- [35 <./inference-eng.png>] [36]
-<slice_solution-a_1.png, id=828, 182.6825pt x 501.875pt>
-File: slice_solution-a_1.png Graphic file (type png)
-<use slice_solution-a_1.png>
-Package pdftex.def Info: slice_solution-a_1.png  used on input line 152.
-(pdftex.def)             Requested size: 182.68204pt x 501.87376pt.
-<slice_solution-a_2.png, id=829, 182.6825pt x 501.875pt>
-File: slice_solution-a_2.png Graphic file (type png)
-<use slice_solution-a_2.png>
-Package pdftex.def Info: slice_solution-a_2.png  used on input line 157.
-(pdftex.def)             Requested size: 182.68204pt x 501.87376pt.
- [37 <./slice_solution-a_1.png>]
-<slice_solution-a_3.png, id=836, 182.6825pt x 94.3525pt>
-File: slice_solution-a_3.png Graphic file (type png)
-<use slice_solution-a_3.png>
-Package pdftex.def Info: slice_solution-a_3.png  used on input line 162.
-(pdftex.def)             Requested size: 182.68204pt x 94.35225pt.
- [38 <./slice_solution-a_2.png> <./slice_solution-a_3.png>]
-<all_columns_df.png, id=845, 566.115pt x 160.6pt>
-File: all_columns_df.png Graphic file (type png)
-<use all_columns_df.png>
-Package pdftex.def Info: all_columns_df.png  used on input line 173.
-(pdftex.def)             Requested size: 367.97038pt x 104.38875pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 173--174
-
- []
-
-<post_df.png, id=846, 508.90125pt x 75.28125pt>
-File: post_df.png Graphic file (type png)
-<use post_df.png>
-Package pdftex.def Info: post_df.png  used on input line 180.
-(pdftex.def)             Requested size: 330.78189pt x 48.93222pt.
-<post_comments_df.png, id=847, 571.13374pt x 101.37875pt>
-File: post_comments_df.png Graphic file (type png)
-<use post_comments_df.png>
-Package pdftex.def Info: post_comments_df.png  used on input line 181.
-(pdftex.def)             Requested size: 371.23254pt x 65.8954pt.
-<answer_df.png, id=848, 539.01375pt x 80.3pt>
-File: answer_df.png Graphic file (type png)
-<use answer_df.png>
-Package pdftex.def Info: answer_df.png  used on input line 182.
-(pdftex.def)             Requested size: 350.35478pt x 52.19437pt.
-<answer_comment_df.png, id=849, 597.23125pt x 93.34875pt>
-File: answer_comment_df.png Graphic file (type png)
-<use answer_comment_df.png>
-Package pdftex.def Info: answer_comment_df.png  used on input line 183.
-(pdftex.def)             Requested size: 388.19571pt x 60.67595pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 180--184
-
- []
-
-[39 <./all_columns_df.png>] [40 <./post_df.png> <./post_comments_df.png> <./answer_df.png> <./answer_comment_df.png>] [41] [42] [43] [44]
-<assets/stopwords_2_overall.png, id=914, 278.03876pt x 255.95625pt>
-File: assets/stopwords_2_overall.png Graphic file (type png)
-<use assets/stopwords_2_overall.png>
-Package pdftex.def Info: assets/stopwords_2_overall.png  used on input line 290.
-(pdftex.def)             Requested size: 241.89175pt x 222.68013pt.
-
-
-Package caption Warning: \label without proper reference on input line 311.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `table:special_character' on page 45 undefined on input line 295.
-
-[45 <./assets/stopwords_2_overall.png>] [46] [47] [48] [49] [50] [51] [52] [53] [54] [55] [56] [57]
-<slice_solution-b_1.png, id=996, 191.71625pt x 501.875pt>
-File: slice_solution-b_1.png Graphic file (type png)
-<use slice_solution-b_1.png>
-Package pdftex.def Info: slice_solution-b_1.png  used on input line 424.
-(pdftex.def)             Requested size: 191.71577pt x 501.87376pt.
-<slice_solution-b_2.png, id=997, 191.71625pt x 453.695pt>
-File: slice_solution-b_2.png Graphic file (type png)
-<use slice_solution-b_2.png>
-Package pdftex.def Info: slice_solution-b_2.png  used on input line 429.
-(pdftex.def)             Requested size: 191.71577pt x 453.6939pt.
- [58 <./slice_solution-b_1.png>]
-
-LaTeX Warning: Reference `data-cleaning' on page 59 undefined on input line 436.
-
-[59 <./slice_solution-b_2.png>] [60] [61] [62]
-<assets/faq_repo_workflow.png, id=1024, 790.955pt x 945.5325pt>
-File: assets/faq_repo_workflow.png Graphic file (type png)
-<use assets/faq_repo_workflow.png>
-Package pdftex.def Info: assets/faq_repo_workflow.png  used on input line 466.
-(pdftex.def)             Requested size: 458.75423pt x 548.40924pt.
-
-Overfull \hbox (46.75423pt too wide) in paragraph at lines 466--467
- [] 
- []
-
-[63 <./assets/faq_repo_workflow.png>] [64] [65] [66] [67]
-<assets/cron_job_workflow.png, id=1076, 721.69624pt x 492.84125pt>
-File: assets/cron_job_workflow.png Graphic file (type png)
-<use assets/cron_job_workflow.png>
-Package pdftex.def Info: assets/cron_job_workflow.png  used on input line 549.
-(pdftex.def)             Requested size: 433.02109pt x 295.70702pt.
-
-Overfull \hbox (21.02109pt too wide) in paragraph at lines 549--550
-[] 
- []
-
-) [68 <./assets/cron_job_workflow.png>] [69]
-\openout2 = `chapter4.aux'.
-
- (./chapter4.tex
-<post-time-distri.png, id=1088, 378.41376pt x 262.9825pt>
-File: post-time-distri.png Graphic file (type png)
-<use post-time-distri.png>
-Package pdftex.def Info: post-time-distri.png  used on input line 13.
-(pdftex.def)             Requested size: 378.41283pt x 262.98184pt.
- [70
-
-
-
-
-]
-<votecounts-distri.png, id=1094, 1184.425pt x 262.9825pt>
-File: votecounts-distri.png Graphic file (type png)
-<use votecounts-distri.png>
-Package pdftex.def Info: votecounts-distri.png  used on input line 24.
-(pdftex.def)             Requested size: 414.55496pt x 92.04524pt.
-
-Overfull \hbox (2.55496pt too wide) in paragraph at lines 24--24
- [] 
- []
-
-[71 <./post-time-distri.png>] [72 <./votecounts-distri.png>]
-<assets/fuzzy-wuzzy-query-1-results.png, id=1110, 674.52pt x 299.1175pt>
-File: assets/fuzzy-wuzzy-query-1-results.png Graphic file (type png)
-<use assets/fuzzy-wuzzy-query-1-results.png>
-Package pdftex.def Info: assets/fuzzy-wuzzy-query-1-results.png  used on input line 48.
-(pdftex.def)             Requested size: 404.71512pt x 179.47188pt.
-<assets/spacy-query-2-results.png, id=1112, 489.83pt x 340.27126pt>
-File: assets/spacy-query-2-results.png Graphic file (type png)
-<use assets/spacy-query-2-results.png>
-Package pdftex.def Info: assets/spacy-query-2-results.png  used on input line 61.
-(pdftex.def)             Requested size: 293.90025pt x 204.16432pt.
- [73 <./assets/fuzzy-wuzzy-query-1-results.png>]
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 74--79
-[] 
- []
-
-[74 <./assets/spacy-query-2-results.png>] [75]
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 106--111
-[] 
- []
-
-[76]
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 145--150
-[] 
- []
-
-[77] [78]
-<assets/sentence-scoring.png, id=1186, 949.5475pt x 452.69125pt>
-File: assets/sentence-scoring.png Graphic file (type png)
-<use assets/sentence-scoring.png>
-Package pdftex.def Info: assets/sentence-scoring.png  used on input line 200.
-(pdftex.def)             Requested size: 617.19856pt x 294.24582pt.
- [79] [80]
-Overfull \vbox (18.8845pt too high) has occurred while \output is active []
-
- [81 <./assets/sentence-scoring.png>]
-<rank_post_1.png, id=1206, 1134.2375pt x 574.145pt>
-File: rank_post_1.png Graphic file (type png)
-<use rank_post_1.png>
-Package pdftex.def Info: rank_post_1.png  used on input line 210.
-(pdftex.def)             Requested size: 396.98907pt x 200.95375pt.
-<assets/sentiment_analysis.png, id=1209, 991.705pt x 214.8025pt>
-File: assets/sentiment_analysis.png Graphic file (type png)
-<use assets/sentiment_analysis.png>
-Package pdftex.def Info: assets/sentiment_analysis.png  used on input line 223.
-(pdftex.def)             Requested size: 595.0276pt x 128.88249pt.
- [82 <./rank_post_1.png>]
-<assets/rank_post_2.png, id=1216, 1134.2375pt x 574.145pt>
-File: assets/rank_post_2.png Graphic file (type png)
-<use assets/rank_post_2.png>
-Package pdftex.def Info: assets/rank_post_2.png  used on input line 233.
-(pdftex.def)             Requested size: 396.98907pt x 200.95375pt.
- [83 <./assets/sentiment_analysis.png>]
-<assets/summarization.png, id=1225, 1243.64626pt x 124.465pt>
-File: assets/summarization.png Graphic file (type png)
-<use assets/summarization.png>
-Package pdftex.def Info: assets/summarization.png  used on input line 246.
-(pdftex.def)             Requested size: 621.82161pt x 62.23235pt.
- [84 <./assets/rank_post_2.png>] [85]
-Overfull \vbox (21.21552pt too high) has occurred while \output is active []
-
- [86 <./assets/summarization.png>]
-<assets/rank_post_3.png, id=1243, 1134.2375pt x 574.145pt>
-File: assets/rank_post_3.png Graphic file (type png)
-<use assets/rank_post_3.png>
-Package pdftex.def Info: assets/rank_post_3.png  used on input line 256.
-(pdftex.def)             Requested size: 396.98907pt x 200.95375pt.
- [87 <./assets/rank_post_3.png>] [88]) [89]
-\openout2 = `chapter5.aux'.
-
- (./chapter5.tex
-<assets/gc-1.png, id=1277, 741.77126pt x 372.39125pt>
-File: assets/gc-1.png Graphic file (type png)
-<use assets/gc-1.png>
-Package pdftex.def Info: assets/gc-1.png  used on input line 6.
-(pdftex.def)             Requested size: 445.0662pt x 223.43646pt.
-
-Overfull \hbox (33.0662pt too wide) in paragraph at lines 6--7
- [][] 
- []
-
-<assets/gc-2.png, id=1278, 741.77126pt x 233.87375pt>
-File: assets/gc-2.png Graphic file (type png)
-<use assets/gc-2.png>
-Package pdftex.def Info: assets/gc-2.png  used on input line 13.
-(pdftex.def)             Requested size: 445.0662pt x 140.32532pt.
-
-Overfull \hbox (33.0662pt too wide) in paragraph at lines 13--14
- [][] 
- []
-
-[90
-
-
-
-
- <./assets/gc-1.png>]) [91 <./assets/gc-2.png>]
-\openout2 = `chapter6.aux'.
-
- (./chapter6.tex [92
-
-
-
-
-]) [93]
-No file main.bbl.
-
-Package glossaries Warning: No \printglossary or \printglossaries found. 
-(Remove \makeglossaries if you don't want any glossaries.) 
-This document will not have a glossary.
-
-[94
-
-
-
-
-]
-\tf@toc=\write12
-\openout12 = `main.toc'.
-
- (./main.aux (./chapter1.aux) (./chapter2.aux) (./chapter3.aux) (./chapter4.aux) (./chapter5.aux) (./chapter6.aux))
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 9B8096E60C5F4404AC8A50ED7ACBA97B;14048.
- ) 
+) [2
+
+])
+! Incomplete \ifmmode; all text was ignored after line 98.
+<inserted text> 
+                \fi 
+<*> ...Series-Based-Text-Summarization/report/main
+                                                  
+The file ended while I was skipping conditional text.
+This kind of error happens when you say `\if...' and forget
+the matching `\fi'. I've inserted a `\fi'; this might work.
+
+! Emergency stop.
+<*> ...Series-Based-Text-Summarization/report/main
+                                                  
+*** (job aborted, no legal \end found)
+
+ 
 Here is how much of TeX's memory you used:
- 38965 strings out of 478268
- 699442 string characters out of 5846348
- 1408114 words of memory out of 5000000
- 55998 multiletter control sequences out of 15000+600000
- 511953 words of font info for 77 fonts, out of 8000000 for 9000
+ 36496 strings out of 478268
+ 663684 string characters out of 5846348
+ 1321782 words of memory out of 5000000
+ 54030 multiletter control sequences out of 15000+600000
+ 489989 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 106i,12n,122p,1661b,2217s stack positions out of 10000i,1000n,20000p,200000b,200000s
-
-pdfTeX warning (dest): name{cite.banarescu-etal-2013-abstract} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.ATSULSA2011} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.ACNATTS2009} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.8449647} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.ATSUSTSRAB2016} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.ATSMACR2022} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.Sindhu2019AspectBasedOM} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.10.1016/j.future.2018.10.041} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.he-etal-2018-exploiting} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.10.1016/j.neucom.2019.04.038} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.Rezaeinia2019SentimentAB} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.ABSAUDNASO2020} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.AlSmadi2017DeepRN} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.Zainuddin2018HybridSC} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.SOABSAUMLT2021} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.MABDELGWAD20226652} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.xue-li-2018-aspect} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.9260162} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.ABSAUSGRD2019} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.NIPS2013_9aa42b31} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.9074166} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.9144082} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.OTHMAN2019485} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.Improving_question_retrieval_in_community_question_answering_using_world_knowledge} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.8054419} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.sms_faq_retrieval} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.duan-etal-2017-question} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.10.1007/978-3-319-42911-3_25} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.10.1145/1099554.1099571} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.7817112} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.6227139} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.5615722} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.10.1007/978-3-319-18356-5_30} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.faq_gen_1} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.stopwords_1} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.stopwords_2} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.8816796} has been referenced but does not exist, replaced by a fixed one
-
-
-pdfTeX warning (dest): name{cite.bugs_nightmare} has been referenced but does not exist, replaced by a fixed one
-
-{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmvtk10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/lm/lmvtt10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (98 pages, 2972543 bytes).
-PDF statistics:
- 1433 PDF objects out of 1440 (max. 8388607)
- 1216 compressed objects within 13 object streams
- 390 named destinations out of 1000 (max. 500000)
- 887 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 106i,11n,122p,1260b,445s stack positions out of 10000i,1000n,20000p,200000b,200000s
+!  ==> Fatal error occurred, no output PDF file produced!

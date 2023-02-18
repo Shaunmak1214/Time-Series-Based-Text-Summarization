@@ -7,25 +7,16 @@ The pipeline proposed includes all the essential components to comprehensively h
 \newpage
 \begin{figure}[H]
   \centerline{\includegraphics[scale=0.5]{slice_framework_1.png}}
-\end{figure} 
-
-\begin{figure}[H]
   \centerline{\includegraphics[scale=0.5]{slice_framework_2.png}}
 \end{figure} 
 
 \begin{figure}[H]
   \centerline{\includegraphics[scale=0.5]{slice_framework_3.png}}
-\end{figure} 
-
-\begin{figure}[H]
   \centerline{\includegraphics[scale=0.5]{slice_framework_4.png}}
-\end{figure} 
-
-\begin{figure}[H]
   \centerline{\includegraphics[scale=0.5]{slice_framework_5.png}}
   \caption{Overall proposed framework}
   \label{framework}
-\end{figure}
+\end{figure} 
 
 \noindent  Note: The background color of each cell in the framework denotes to:
 \begin{itemize}
@@ -148,12 +139,7 @@ A close up view of the architecture of solution A can be seen in the following f
 
 \pagebreak
 \begin{figure}[H] 
-  \centering
   \noindent \includegraphics[scale=1]{slice_solution-a_1.png}
-\end{figure}
-
-\begin{figure}[H] 
-  \centering
   \noindent \includegraphics[scale=1]{slice_solution-a_2.png}
 \end{figure}
 
@@ -280,11 +266,11 @@ Since now that the data has been formatted nicely it is very easy for us to trac
 \subsubsection{Preprocessing - Finding tech related stop words} \ref{sssec:preprocessing_finding_tech_related_stop_words} \label{sssec:preprocessing_finding_tech_related_stop_words}
 The next step is to find tech related stop words. This is done in order to remove the stop words from the data. Stop words are words that are not important to the data, and they are usually words that are used frequently in the data. 
 
-However, finding stop words is a very tedious task, in the previous yeaers, most of the time one would use manually curated stopwords lists to remove stop words from the data \cite{stopwords_1},the stop words list can come from a variety of sources, such as a list of stop words from a specific domain, or a list of stop words from a specific language. In our case, we're dealing with a very specific domain, which is the engineering domain, normal stop words lists are not suitable for our case, as they are not specific to the engineering domain. Noises in the dataset will be resulted if a normal stop words lists is used to remove stop words from the data.
+However, finding stop words is a very tedious task, in the previous yeaers, most of the time one would use manually curated stopwords lists to remove stop words from the data \cite{stopwords_1},the stop words list can come from a variety of sources, such as a list of stop words from a specific domain, or a list of stop words from a specific language. In our case, we're dealing with a very specific domain, which is the software engineering domain, normal stop words lists are not suitable for our case, as they are not specific to the software engineering domain. Noises in the dataset will be resulted if a normal stop words lists is used to remove stop words from the data.
 
 Stop words list can be found by using a wordcloud to find the most frequent words in the data, and then removing the most frequent words from the data. However, this method is not very accurate, as it does not take into account the context of the data, and it does not take into account the importance of the words in the data. 
 
-\cite{stopwords_2} has made tremendous effort on curating the stopword list for the engineering domain, they've done it by analyzing the data found in patent documents which mostly describes domains related to engineering. The notable techniques they've used are minimally describe in the Figure \ref{fig:overall_procedure_stopwords_curation} below. In short, the author of \cite{stopwords_2} had propose a procedure which carefully picks stopwords from patented documents with using prep-rocessing techniques, a ranking framework based of terms statistics and finally with an evaluation carried out by experts based on a term-by-term basis. With that being said, the stopwords list curaed by them are choosed to be used in this work.
+\cite{stopwords_2} has made tremendous effort on curating the stopword list for the software engineering domain, they've done it by analyzing the data found in patent documents which mostly describes domains related to software engineering. The notable techniques they've used are minimally describe in the Figure \ref{fig:overall_procedure_stopwords_curation} below. In short, the author of \cite{stopwords_2} had propose a procedure which carefully picks stopwords from patented documents with using prep-rocessing techniques, a ranking framework based of terms statistics and finally with an evaluation carried out by experts based on a term-by-term basis. With that being said, the stopwords list curaed by them are choosed to be used in this work.
 
 \begin{figure}[H]
   \centering \includegraphics[scale=0.87]{assets/stopwords_2_overall.png}
@@ -295,7 +281,8 @@ Stop words list can be found by using a wordcloud to find the most frequent word
 The next step is to remove special characters from the data. The data scraped from StackOverflow consists all sorts of special characters, the data is not clean at all. Having special characters in the dataset might causes a lot of unwanted trouble, therefore special characters needed to be treated in our dataset. The table below \ref{table:special_character} shows all the special characters that are identified in the dataset. 
 
 \begin{table}[ht]
-  
+ 
+  \caption{Special Character} % title of Table 
   \centering % used for centering table
   \begin{tabular}{c c c c} % centered columns (4 columns)
   \hline\hline %inserts double horizontal lines
@@ -310,7 +297,6 @@ The next step is to remove special characters from the data. The data scraped fr
   \end{tabular}
   \label{table:special_character} % is used to refer this table in the text 
 
-  \caption{Special Character} % title of Table
 \end{table}
 % Plot before and after here
 % \begin{figure}[H]
@@ -420,14 +406,9 @@ The architecture of solution B is very similar to solution A, the only differenc
 
 \pagebreak
 \begin{figure}[H]
-  \centering
   \noindent \includegraphics[scale=1]{slice_solution-b_1.png}
-\end{figure}
-
-\begin{figure}[H]
-  \centering
   \noindent \includegraphics[scale=1]{slice_solution-b_2.png}
-\caption{Solution B Architecture }\label{solution_b_architecture}
+  \caption{Solution B Architecture }\label{solution_b_architecture}
 \end{figure}
 
 \subsubsection{Solution B - Approach}
