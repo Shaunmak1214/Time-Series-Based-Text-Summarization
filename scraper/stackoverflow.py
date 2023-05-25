@@ -9,6 +9,7 @@ import time
 import requests
 import json 
 import undetected_chromedriver as uc
+from tqdm import tqdm
 
 def get_data(link, postIdx):
     print('Getting data for post: ', postIdx, ' with link: ', link)
@@ -186,7 +187,7 @@ def get_data(link, postIdx):
 
       print(len(all_comments))
       df = pd.DataFrame.from_records(all_comments)
-      df.to_csv('./archive/react-useeffect-final.csv', mode="a", index=False, header=False)
+      df.to_csv('./archive/javascript.csv', mode="a", index=False, header=False)
 
       print("{} comments saved to csv for index {} and link {} ".format(len(all_comments), postIdx, link))
 
@@ -197,15 +198,20 @@ def get_data(link, postIdx):
 if __name__ == '__main__': 
   op = webdriver.ChromeOptions()
   op.add_argument('--disable-popup-blocking') 
-  op.add_argument('--headless')
+  op.add_argument('--headless=new')
   op.add_argument('--incognito')
+  op.add_argument("--disable-extensions")
+  op.add_argument('--disable-application-cache')
+  op.add_argument('--disable-gpu')
+  op.add_argument("--no-sandbox")
+  op.add_argument("--disable-setuid-sandbox")
+  op.add_argument("--disable-dev-shm-usage")
   path = '/usr/local/bin/chromedriver' # write the path here
-  driver = uc.Chrome(executable_path=path, options=op, version_main=108)
+  driver = uc.Chrome(executable_path=path, options=op)
   
-  for i in range(1, 10):
+  for i in tqdm(range(1, 4000)):
     print("Scrapping page number: ", i)
-    api_link = 'https://api.stackexchange.com/2.3/search?order=desc&sort=activity&site=stackoverflow&key=MkldPoI*EBSwcLnfwW3iQw((&intitle=react%20useeffect&page={page}&pagesize=100';
-    # https://api.stackexchange.com/2.3/search?order=desc&sort=activity&site=stackoverflow&key=MkldPoI*EBSwcLnfwW3iQw((&intitle=centering%20a%20div&page=3&pagesize=100
+    api_link = 'https://api.stackexchange.com/2.3/search?order=desc&sort=activity&site=stackoverflow&key=MkldPoI*EBSwcLnfwW3iQw((&intitle=javascript&page={page}&pagesize=100';
     api_link = api_link.format(page=i)
     res = requests.get(api_link)
     response = json.loads(res.text)
