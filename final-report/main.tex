@@ -1,0 +1,137 @@
+\documentclass{mmuthesis}
+\usepackage[utf8]{inputenc}
+%\newsubfloat{figure}
+
+\usepackage{lipsum}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{rotating}
+\usepackage{longtable}
+
+\usepackage{wrapfig}
+\usepackage{epstopdf}
+\usepackage{pdflscape}
+
+
+\usepackage[x11names,dvipsnames,svgnames]{xcolor}
+\usepackage[os=win]{menukeys}
+\usepackage{listings}
+\lstset{language=[LaTeX]TeX,columns=fullflexible,
+basicstyle=\ttfamily,texcsstyle=*\bfseries\color{NavyBlue},
+commentstyle=\itshape\color{PaleVioletRed4},
+frame=single,framesep=6pt,
+framexleftmargin=6pt,framexrightmargin=6pt,
+xleftmargin=12pt,xrightmargin=12pt,
+breaklines=true,breakatwhitespace=true}
+
+
+\newsavebox{\mysavebox}
+\newlength{\myrest}
+\usepackage{tikz}
+\usepackage{adjustbox}
+
+\usepackage{pdfpages}
+
+\author{Mak Yen Wei}
+\title{Forum Text Processing and Summarization}
+\submissionyear{2023}
+\submissionmonth{January}
+\faculty{FACULTY OF COMPUTING AND INFORMATICS}
+\degree{Bachelor of Computer Science (Hons. Data Science)}
+\qualification{Bachelor of Computer Science (Hons. Data Science), Multimedia University, Malaysia} 
+
+% load acronym definitions from separate file 
+% \loadglsentries{myacronyms}
+
+\usepackage{listings}
+\usepackage{color}
+
+\setstretch{2}
+\DeclareCaptionType{InfoBox}
+\begin{document}
+
+
+\begin{titlingpage}
+% \begin{center} 
+
+\lstset{frame=tb,
+  language=Python,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+% \renewcommand{\familydefault}{<Times New Roman>}
+% \includegraphics[scale=0.30]{mmu.png}\\
+
+% \vspace{2.5cm}
+% \Large{\textbf{Final Year Project}} \\
+% \vspace{1cm}
+% \Large{\textbf{Time Series Based Summarization}} \\
+% \vspace{1cm}
+
+% \vspace{3.0cm}
+
+% \large{\textbf{Mak Yen Wei}} \\ 
+% \vspace{4.0cm}
+% \large{\textbf{Bachelor of Computer Science}} \\ 
+% \large{\textbf{(Data Science)}} \\ 
+% \vspace{0.5cm}
+% \large{\textbf{Jan 2023}} \\ 
+
+% \end{center}
+\end{titlingpage} 
+
+\frontmatter
+\makecoverandtitlepage
+\copyrightpage
+\declarationpage
+
+\acknowledgements{\input{acknowledge.tex}\clearpage}
+% \dedication{To my parents, my husband, and my daughter.}
+
+\abstractfromfile{abstract}
+
+{\clearpage\SingleSpacing 
+\tableofcontents\clearpage
+\listoftables\clearpage
+\listoffigures\clearpage
+}
+
+% \prefacefromfile{sample-preface}
+
+\mainmatter 
+  \include{chapter1}
+  \include{chapter2} 
+  \include{chapter3}
+  \include{chapter4}
+  \include{chapter5}
+  \include{chapter6}   
+
+ 
+\backmatter
+\bibliography{citation} 
+% \printglossaries 
+% \theendnotes
+% {\SingleSpacing\printindex}
+
+\appendix
+\include{appendix}
+
+% \ownpubs
+% \nociteconf{Lim:2009}
+% \nocitejour{Lim:Ranaivo:Tang:Polibits:2011,Lim:Ranaivo:Tang:Procedia:2011}
+% \bibliographyjour{llt}
+% \bibliographyconf{llt}
+\end{document}
+

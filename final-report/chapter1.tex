@@ -1,0 +1,58 @@
+\chapter{Introduction}
+Google occupies over ninety percent of people's working hours when it comes to software engineering. A large portion of a developer's responsibility is devoted to the removal of errors. Even though it is essential, it might be a tedious waste of time to look through a number of online forums and stack exchanges in order to solve an easy linear equation in Python\cite{bugs_nightmare}.It is not unusual for engineers to explore Stack Overflow for a number of hours in an effort to find an answer that is definite.
+
+It is infamously difficult to address bugs in software due to the vast number of interdependent libraries and packages that are utilised by developers working in a wide variety of programming languages, frameworks, and platforms. Sometimes the problem is caused by a fresh new bug that was included in the most current version of the application. There is also the possibility that a mistake was made in the coding. In rare instances, the problem may also lie inside the local environment of the developer. There might be an infinite number of contributing elements here.
+
+By utilising text processing techniques, ranking approaches, and summarization models, the work of this thesis is to locate the best solution to the problem faced by engineers. With premilinary research, stitching together context from online forums such as stackoverflow with code sharing platforms such as github in order to compile the best possible solution to the problem at hand. This was particularly highlighted in \cite{8816796}. 
+
+However, one of the major issue with proposing such framework is the data gathering process. The data is not readily available and hence data scraping is required. To find the best solution, it's benifical to have as much dataset as possible. Throughout the course of this investigation, a framework to address this issue by using cleverly timed cronjobs to scrape data from online forums as well as a FAQ generation process will be presented.
+
+\vspace{1cm}
+\pagebreak
+\section{Problem Statement}~\label{ch:problem_statement}
+FAQ Generation has been a long history, manually summarizing and cherry picking the best anwers to a question was the framework used for decades. The drawback of this method is that it's time consuming and not scalable\cite{}. With the advent of deep learning, the problem of FAQ generation has been addressed by using summarization models. \textbf{However the research done in the software engineering area is very limited}, most researches have made effort in the banks, insurance FAQ generation \cite{}. 
+
+Furthermore, \textbf{FAQ Generation on technical forums is a challenging task} as the corpus used will differ from general datasets such as the medical field. The terminilogies used differs drastically and hence special care must be taken to ensure the faq generated is accurate. \cite{stopwords_2} \cite{stopwords_1}.
+
+In addition, \textbf{keywords used by developers are not always accurate enough to find the best solution}. While google searching does a great job at classifying keywords to finding the matching solution, the same cannot be said for technical forums. Developers are not always able to find the best solution to their problem. \cite{bugs_nightmare} because the amount of factors that contributes to a problem can be overwhelming.
+
+\pagebreak
+\section{Hypothesis}
+With the advent research gone into summarization, topic modelling, sentiment analysis models. A framework can be developed to address the problem of FAQ generation on technical forums. The framework will be able to generate a FAQ based on the keywords asked by the developer and also be able to rank the best solution to the problem.
+
+\vspace{1cm}
+\section{Objective}
+Through the utilisation of text processing techniques, ranking approaches, and summarization models, providing assistance to developers in their search for answers is worth investigating. An automation towards faq generation in the software engineering domain is the primary aim of this thesis
+
+The project objectives are as follows:
+\begin{itemize}
+    \item \textbf{To gather} dataset from online forums in the software engineering domain.
+    \item \textbf{To propose} a scalable, modular framework for FAQ generation on online forums in the software engineering domain.
+    \item \textbf{To evaluate} multiple architectures for FAQ generation.
+
+\end{itemize}
+
+% The major objective is to cut down on the amount of time spent exploring the issue and traversing the many internet discussion forums. The manual execution of this process may be challenging for developers since not only does it entail searching for numerous subject pages, but it also takes reading through the entirety of the forum in order to identify the specific response to the problem. Using scraping technology, we want to collect and save metadata from online sources (including post voting counts, comment count totals, and more), as well as from any and all relevant forums, so that we can address this problem and make it less of a burden.
+
+% The fundamental objective of this research is to provide support for the process of identifying the best possible solution to the issue at hand. It is planned to employ algorithms that compare texts in order to find the threads that are most relevant to each individual developer's particular use case. For the sake of this endeavour, the developer's search phrases that were used to locate a workaround will be utilised.
+
+% The ultimate objective is to rank the articles in order of priority based on how well each item serves the developer's use case. There are a few primary factors to take into account while determining the order in which to rank the available opportunities. The quantity of keywords that are relevant to the article, the semantic similarity between the post and the developer's use case, the number of upvotes, the number of comments, the number of views, and finally sentiment analysis will all play a part in determining where the post falls in the rankings. When determining placement, a variety of factors, including those indicated above, will be considered.
+
+% The final purpose of this research is to generate a summary of the most insightful comments, answers, and responses' comments from the postings that received the highest ratings. Using summarization models that have been trained with deep learning, the objective is to achieve the aim of providing the developer with a high-level overview of the problem and its solution.
+
+\vspace{1cm}
+\section{Scope}
+\subsection*{Platform}
+Stackoverflow, Github, Reddit and Twitter may be scraped, ranked in terms of their usefulness to the developer's use case, and the top-ranked posts' comments, answers, and responses' comments can be summarised using the framework. Stackoverflow will be the primary focus in FYP1. As an added bonus, a web app will be built so programmers may use the framework to find the best solution to their problem.
+
+\subsection*{Technologies}
+\begin{itemize}
+    \item \textbf{Web Application}: Python, FastAPI, AWS, ReactJS
+    \item \textbf{Scraping}: Selenium
+    \item \textbf{Text Processing}: NLTK, Spacy
+    \item \textbf{Summarizing}: Tensorflow, Keras
+\end{itemize}
+
+\subsection*{Language}
+In the context of this thesis, the language used is English. The reason for this is because the majority of the online forums are in English.
+

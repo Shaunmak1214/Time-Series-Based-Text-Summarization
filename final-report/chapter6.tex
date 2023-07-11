@@ -1,0 +1,17 @@
+\chapter{Conclusions}
+
+\section{Summary}
+Over the course of this research, we have scraped, compiled, cleaned, proprocess the dataset. A framework architecture to facilitate the process of finding the related post as an answer to the user prompt has been proposed. The framework is composed of 3 main components: scraping, proprocess and inferencing. 2 inferencing architecture had been proposed in the work, however only the first solution is built and tested with 3 experts that we've identified. One of the important tasks is to find a match of the question asked by the user with the posts in the forum. As of now, all techniques are based of NLP techniques such as FuzzyWuzzy and Spacy which was discussed in \ref{matching-posts} and tested in \ref{post-matching_results}, however deep learning models that are discussed in the literature review section \ref{lit:context_matching} will be tested in the future.
+
+\section{Challenges}
+Computation power is one of the main challenges in this work, scraping, sentiment analysis and summarization are computationally expensive tasks. Scraping takes a lot of time as the process is sequential, sentiment analysis and summarization however is slow because the model we're using is expected to be ran on a gpu-enabled machine. 
+
+\section{Future Work}
+\begin{itemize}
+  \item The results have shown that the summarization of the texts in posts are possilbe, but the results are not satisfactory. Therefore others summarization algorithms should be tested.
+  \item The framework is slow in general, each process in the pipeline takes time. As planned in the proposed framework an FAQ Repository will be built to store the results of the pipeline. This repository will be used to answer the questions in the future. Therefore the framework should be improved to be able to answer the questions in a reasonable time.
+  \item Solution A is the only architecture we've built and tested in FYP 1, solution B will be built in FYP 2.
+  \item Parralelization of the scraping process is to explored.
+  \item Possibility of migrating to a fully cloud hosted solution is to be explored.
+  \item Deep learning models for matching posts are to be tested.
+\end{itemize}
